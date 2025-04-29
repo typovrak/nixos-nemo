@@ -5,7 +5,7 @@ let
 	group = config.users.users.${username}.group or "users";
 	home = config.users.users.${username}.home;
 in {
-	system.activationScripts.alacritty = ''
+	system.activationScripts.nemo = ''
 		mkdir -p ${home}/.config
 		chown ${username}:${group} ${home}/.config
 		chmod 700 ${home}/.config
